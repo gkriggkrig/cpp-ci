@@ -4,5 +4,5 @@
 using cpp_ci::add;
 
 TEST(add, positive_numbers) {
-    ASSERT_EQ(4, add(2, 3));
+    ASSERT_EQ(5, add(2, 3));
 }
