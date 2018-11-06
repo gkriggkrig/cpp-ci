@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build . -t cpp_ci/test
+
+script:
+  - docker run cpp_ci/test /sources/build/tests/test_add
